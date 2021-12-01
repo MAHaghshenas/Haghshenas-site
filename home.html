@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> حضور و غیاب صبحگاه | دبیرستان معراج اندیشه 2</title>
+        <link type="text/css" rel="stylesheet" href="home.css">
+        <link rel="shortcut icon" href="photo/icon.ico"/>
+    </head>
+
+    <body>
+
+        <meta name="google-site-verification" content="P8xWG2ZOalQ6O7D2L63TZJHspY7vmGeZurg4_yXuKeI" />
+
+        <section id="banner">
+            <img class="logo" src="photo/logo.png">
+            <div class="banner-text">
+                <h1>حضور و غیاب صبحگاه</h1>
+                <p>سبکی نو در حضور و غیاب</p>
+                <div class="banner-button">
+                    <a href="ahmadi roshan.html"> <span></span>کلاس شهید احمدی روشن</a>
+                    <a href="shahriari.html"> <span></span>کلاس شهید شهریاری</a>
+                    <a href="tehrani moghadam.html"> <span></span>کلاس شهید تهرانی مقدم</a>
+                    <a href="rezaie nezhad.html"> <span></span>کلاس شهید رضایی نژاد</a>
+                    <a href="fakhri zadeh.html"> <span></span>کلاس شهید فخری زاده</a>
+                    <a href="soleimani.html"> <span></span>کلاس شهید سلیمانی</a>
+                </div>
+            </div>
+
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li> <a href="home.html"> خانه </a></li>
+                    <li> <a href="#"> حضور و غیاب </a></li>
+                    <li> <a href="#"> پست ها </a></li>
+                    <li> <a href="#"> ارتباط با ما </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menuButton">
+            <img src="photo/menu.png" id="menu">
+        </div>
+       
+        <script>
+            var menuButton = document.getElementById("menuButton")
+            var menu = document.getElementById("menu")
+            var sideNav = document.getElementById("sideNav")
+
+            sideNav.style.right = "-135px"
+            menuButton.onclick = function(){
+                if(sideNav.style.right == "-135px"){
+                    sideNav.style.right = "0"
+                    menu.src = "photo/close.png";
+                }
+                else{
+                    sideNav.style.right = "-135px"
+                    menu.src = "photo/menu.png";
+                }
+            }
+
+        </script>
+
+    </body>
+
+</html>

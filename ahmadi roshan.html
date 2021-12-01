@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="ahmadi roshan.css">
+        <link rel="shortcut icon" href="photo/icon.ico"/>
+	
+		<div class="container">
+			<title>کلاس شهید احمدی روشن</title>
+			<h2>حضور و غیاب صبحگاه</h2>
+			<h1>کلاس شهید احمدی روشن</h1>
+	
+	</head>
+		
+		<form action="" id="join-us">
+		  <div class="fields">
+			<span>
+			 <input placeholder="نام و نام خانوادگی" type="text" />
+		  </span>
+		  <br />
+		  
+		  </div>
+		  <div class="submit">
+			<input class="submit" value="ثبت حضور" type="button" />
+		  </div>
+	
+	
+		</form>
+	  </div>
+	
+	<body>
+
+		<div id="sideNav">
+            <nav>
+                <ul>
+                    <li> <a href="home.html"> خانه </a></li>
+                    <li> <a href="#"> حضور و غیاب </a></li>
+                    <li> <a href="#"> پست ها </a></li>
+                    <li> <a href="#"> ارتباط با ما </a></li>
+                </ul>
+            </nav>
+        </div>
+
+		<div id="menuButton">
+            <img src="photo/menu.png" id="menu">
+        </div>
+		
+		<script>
+			var menuButton = document.getElementById("menuButton")
+			var menu = document.getElementById("menu")
+			var sideNav = document.getElementById("sideNav")
+		
+			sideNav.style.right = "-135px"
+			menuButton.onclick = function(){
+				if(sideNav.style.right == "-135px"){
+					sideNav.style.right = "0"
+					menu.src = "photo/close.png";
+				}
+				else{
+					sideNav.style.right = "-135px"
+					menu.src = "photo/menu.png";
+				}
+			}
+		
+		</script>
+	
+	
+	
+		<div class="warning">
+			<p>توجه! در صورتی که عضوی از کلاس شهید احمدی روشن نباشید ولی در این صفحه حاضری بزنید، حضور شما ثبت نخواهد شد</p>
+		</div>
+	</body>
+	
+</html>

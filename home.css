@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#banner{
+    background: linear-gradient(rgba(0,0,0.2,0.2),#5103758c), url(photo/background1.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.logo{
+    width: 100px;
+    position: absolute;
+    top: 4%;
+    right: 15%;
+}
+
+.banner-text{
+    text-align: center;
+    color: yellow;
+    padding-top: 170px;
+}
+
+.banner-text h1{
+    font-size: 80px;
+    font-family: vazir;
+}
+
+.banner-text p{
+    font-size: 25px;
+    font-family: vazir;
+    src: url(font/Vazir.ttf) format(ttf);
+    margin-bottom: 50px;
+}
+
+.banner-button a{
+    margin: 30px;
+    width: 170px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    color: yellow;
+    border: 2px solid yellow;
+    font-family: vazir;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+    margin-left: 60px;
+    margin-top: 10px;
+    border-radius: 13px;
+}
+
+.banner-button a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to left,#51ff00,#00ccff);
+    z-index: -1;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.banner-button a:hover span{
+    width: 100%;
+}
+
+.banner-button a:hover{
+    color: rgb(0, 0, 0);
+}
+
+#sideNav{
+    width: 135px;
+    height: 100vh;
+    position: fixed;
+    right: -135px;
+    top: 0;
+    background: linear-gradient(to top,#33ff00,#00eeff);
+    z-index: 2;
+    font-family: vazir;
+    font-size: 17px;
+    text-align: right;
+    transition: 0.5s;
+    border-radius: 15px;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 90px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#menuButton{
+    width: 50px;
+    height: 50px;
+    background: rgb(184, 6, 255);
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#menuButton img{
+    width: 30px;
+    margin-top: 10px;
+}
